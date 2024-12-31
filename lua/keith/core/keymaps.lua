@@ -5,7 +5,7 @@ local keymap = vim.keymap -- for conciseness-- [[ Basic Keymaps ]]
 keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 keymap.set("n", "<leader>v", ":vs<cr>", { desc = "Spawn new vertical window" })
-keymap.set("n", "<leader>wa", ":wa<cr>", { desc = "Save changes on opened files" })
+keymap.set("n", "<leader>wa", ":w<cr>", { desc = "Save changes on current file" })
 
 keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
